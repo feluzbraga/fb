@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fernanda Braga | Portfolio | Business & Marketing Strategy</title>
+  <meta name="description" content="Portfolio profissional de Fernanda Braga, consultora de estratégia, negócios e marketing, com mais de 26 anos de experiência em diferentes setores." />
+  <meta name="author" content="Fernanda Braga" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.fernandabraga.com.br/portfolio/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.fernandabraga.com.br/portfolio/" />
+  <meta property="og:title" content="Fernanda Braga | Portfolio" />
+  <meta property="og:description" content="Selected work across business strategy, marketing, growth, leadership and business development." />
+  <meta property="og:image" content="https://www.fernandabraga.com.br/fernanda.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --purple:#5A2D82;
+      --pink:#B46AA0;
+      --gold:#D4A14A;
+      --cream:#F2E9E4;
+      --dark:#3A3A3C;
+      --muted:#686868;
+      --white:#fff;
+      --line:rgba(90,45,130,.12);
+      --grad:linear-gradient(135deg,#5A2D82 0%,#B46AA0 55%,#D4A14A 100%);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Poppins',sans-serif;
+      color:var(--dark);
+      background:var(--white);
+      overflow-x:hidden;
+    }
+    a{color:inherit}
+    button{font:inherit}
+    section{padding:96px 80px}
+    .container{max-width:1240px;margin:0 auto}
+
+    /* NAV */
+    .navbar{
+      position:fixed;top:0;left:0;right:0;z-index:1000;
+      height:64px;padding:0 48px;
+      display:flex;align-items:center;justify-content:space-between;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-brand{
+      display:flex;align-items:center;gap:12px;
+      text-decoration:none;
+    }
+    .nav-logo{
+      width:38px;height:38px;border-radius:50%;
+      background:var(--grad);
+      display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;
+    }
+    .nav-logo span{
+      color:white;font-family:Georgia,serif;font-style:italic;
+      font-size:17px;font-weight:700;
+    }
+    .nav-name{font-size:15px;font-weight:600;color:var(--purple)}
+    .nav-links{display:flex;gap:28px}
+    .nav-links a{
+      text-decoration:none;font-size:12px;font-weight:500;
+      color:var(--dark);transition:.2s;
+    }
+    .nav-links a:hover{color:var(--purple)}
+    .nav-right{display:flex;align-items:center;gap:14px}
+    .home-link{
+      font-size:11px;font-weight:600;text-decoration:none;
+      color:var(--purple);letter-spacing:.5px;
+    }
+    .lang-switcher{display:flex;gap:4px}
+    .lang-btn{
+      background:none;border:1.5px solid rgba(90,45,130,.2);
+      border-radius:4px;padding:4px 9px;font-size:10px;
+      font-weight:700;color:var(--dark);cursor:pointer;
+      letter-spacing:.5px;transition:.2s;
+    }
+    .lang-btn.active,.lang-btn:hover{
+      background:var(--purple);border-color:var(--purple);color:white;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:78vh;padding-top:64px;
+      display:grid;grid-template-columns:58% 42%;
+      background:var(--cream);overflow:hidden;
+    }
+    .hero-copy{
+      padding:86px 60px 86px 80px;
+      display:flex;flex-direction:column;justify-content:center;
+      position:relative;
+    }
+    .hero-copy:before{
+      content:"";position:absolute;top:-180px;left:-180px;
+      width:520px;height:520px;border-radius:50%;
+      background:radial-gradient(circle,rgba(180,106,160,.13),transparent 70%);
+    }
+    .eyebrow,.section-label{
+      color:var(--gold);font-size:11px;font-weight:700;
+      letter-spacing:3px;text-transform:uppercase;
+    }
+    .eyebrow{margin-bottom:18px}
+    .hero h1{
+      color:var(--purple);font-size:clamp(40px,5vw,64px);
+      line-height:1.04;font-weight:700;margin-bottom:18px;
+    }
+    .hero h1 span{color:var(--gold)}
+    .hero-title{
+      font-size:clamp(19px,2.2vw,28px);line-height:1.45;
+      font-weight:300;max-width:670px;margin-bottom:20px;
+    }
+    .hero-title strong{color:var(--purple);font-weight:600}
+    .hero-desc{
+      max-width:650px;color:#555;font-size:15px;
+      line-height:1.85;font-weight:300;margin-bottom:32px;
+    }
+    .hero-pills{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:36px}
+    .pill{
+      border:1.5px solid var(--purple);border-radius:100px;
+      padding:7px 14px;color:var(--purple);font-size:10px;
+      font-weight:600;letter-spacing:1px;text-transform:uppercase;
+    }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:14px 28px;border-radius:100px;text-decoration:none;
+      font-size:13px;font-weight:600;transition:.25s;
+    }
+    .btn-primary{background:var(--purple);color:white;box-shadow:0 4px 20px rgba(90,45,130,.25)}
+    .btn-primary:hover{background:var(--pink);transform:translateY(-2px)}
+    .btn-outline{border:1.5px solid var(--purple);color:var(--purple);background:transparent}
+    .btn-outline:hover{background:rgba(90,45,130,.06);transform:translateY(-2px)}
+    .hero-photo{position:relative;overflow:hidden}
+    .hero-photo img{
+      width:100%;height:100%;object-fit:cover;object-position:top center;display:block;
+    }
+    .hero-photo:after{
+      content:"";position:absolute;bottom:0;left:0;right:0;height:150px;
+      background:linear-gradient(to top,var(--cream),transparent);
+    }
+
+    /* INTRO STRIP */
+    .strip{
+      background:var(--purple);display:grid;
+      grid-template-columns:repeat(4,1fr);
+    }
+    .strip-item{
+      padding:34px 28px;text-align:center;
+      border-right:1px solid rgba(255,255,255,.1);
+      border-top:3px solid var(--gold);
+    }
+    .strip-item:last-child{border-right:0}
+    .strip-number{
+      font-size:29px;font-weight:700;color:white;line-height:1;margin-bottom:7px;
+    }
+    .strip-label{
+      color:rgba(255,255,255,.75);font-size:11px;
+      line-height:1.5;text-transform:uppercase;letter-spacing:1px;
+    }
+
+    /* SECTION HEAD */
+    .section-head{max-width:760px;margin-bottom:52px}
+    .section-label{margin-bottom:12px}
+    .section-title{
+      color:var(--purple);font-size:clamp(29px,3vw,42px);
+      line-height:1.2;font-weight:700;margin-bottom:17px;
+    }
+    .section-title em{font-style:normal;color:var(--gold)}
+    .section-desc{font-size:15px;color:#666;line-height:1.85;font-weight:300}
+
+    /* POSITIONING */
+    .positioning{background:white}
+    .position-grid{
+      display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:start;
+    }
+    .position-text p{
+      font-size:16px;line-height:1.9;color:#555;font-weight:300;
+      margin-bottom:18px;
+    }
+    .quote-box{
+      background:var(--purple);border-radius:20px;padding:38px;
+      color:white;position:relative;overflow:hidden;
+    }
+    .quote-box:after{
+      content:"";position:absolute;width:190px;height:190px;
+      border-radius:50%;right:-80px;bottom:-90px;
+      background:rgba(255,255,255,.07);
+    }
+    .quote-box .small{
+      color:var(--gold);font-size:10px;font-weight:700;
+      letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;
+    }
+    .quote-box h3{
+      font-size:23px;line-height:1.4;font-weight:600;
+      margin-bottom:18px;position:relative;z-index:1;
+    }
+    .quote-box p{
+      color:rgba(255,255,255,.78);font-size:13px;line-height:1.75;
+      position:relative;z-index:1;
+    }
+
+    /* EXPERTISE */
+    .expertise{background:var(--cream)}
+    .expertise-grid{
+      display:grid;grid-template-columns:repeat(5,1fr);gap:16px;
+    }
+    .expertise-card{
+      background:white;border-radius:16px;padding:28px 22px;
+      border-top:3px solid var(--purple);min-height:230px;
+      transition:.25s;
+    }
+    .expertise-card:hover{
+      transform:translateY(-4px);box-shadow:0 14px 35px rgba(90,45,130,.10);
+    }
+    .expertise-icon{font-size:27px;margin-bottom:18px}
+    .expertise-card h3{
+      color:var(--purple);font-size:16px;line-height:1.3;
+      margin-bottom:15px;
+    }
+    .expertise-card ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .expertise-card li{
+      font-size:11.5px;line-height:1.45;color:#666;
+      padding-left:13px;position:relative;
+    }
+    .expertise-card li:before{
+      content:"→";position:absolute;left:0;color:var(--gold);font-weight:700;
+    }
+
+    /* CASES */
+    .cases{background:white}
+    .cases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .case-card{
+      border:1px solid rgba(90,45,130,.12);border-radius:20px;
+      overflow:hidden;background:white;transition:.3s;
+      display:flex;flex-direction:column;
+    }
+    .case-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 18px 45px rgba(90,45,130,.10);
+      border-color:rgba(90,45,130,.22);
+    }
+    .case-top{
+      background:var(--cream);padding:27px 30px 23px;
+      border-bottom:1px solid rgba(90,45,130,.08);
+      position:relative;
+    }
+    .case-sector{
+      font-size:10px;font-weight:700;letter-spacing:2px;
+      color:var(--gold);text-transform:uppercase;margin-bottom:8px;
+    }
+    .case-title{
+      color:var(--purple);font-size:23px;line-height:1.25;
+      font-weight:700;margin-bottom:8px;
+    }
+    .case-role{
+      font-size:11.5px;color:#777;line-height:1.5;
+    }
+    .case-body{padding:27px 30px;display:flex;flex-direction:column;gap:21px;flex:1}
+    .case-block h4{
+      color:var(--purple);font-size:10px;font-weight:700;
+      letter-spacing:1.8px;text-transform:uppercase;margin-bottom:8px;
+    }
+    .case-block p{font-size:12.5px;line-height:1.7;color:#5e5e5e}
+    .case-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:7px 18px}
+    .case-list li{
+      font-size:11.5px;line-height:1.5;color:#5e5e5e;
+      padding-left:14px;position:relative;
+    }
+    .case-list li:before{
+      content:"";width:5px;height:5px;border-radius:50%;
+      background:var(--gold);position:absolute;left:0;top:7px;
+    }
+    .result{
+      padding:14px 16px;background:linear-gradient(135deg,rgba(90,45,130,.055),rgba(212,161,74,.09));
+      border-left:3px solid var(--gold);border-radius:9px;
+    }
+    .result-label{
+      font-size:9px;font-weight:700;letter-spacing:1.5px;
+      color:var(--gold);text-transform:uppercase;margin-bottom:5px;
+    }
+    .result p{font-size:12.5px;color:#555;line-height:1.55}
+    .result strong{color:var(--purple)}
+    .case-links{display:flex;flex-wrap:wrap;gap:8px;padding-top:2px}
+    .case-link{
+      text-decoration:none;border:1px solid rgba(90,45,130,.2);
+      color:var(--purple);border-radius:100px;padding:7px 12px;
+      font-size:10px;font-weight:600;transition:.2s;
+    }
+    .case-link:hover{background:var(--purple);color:white}
+
+    /* FRANCHISING FEATURE */
+    .feature{background:var(--purple);color:white}
+    .feature .section-label{color:var(--gold)}
+    .feature .section-title{color:white}
+    .feature-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:start}
+    .feature-intro{
+      color:rgba(255,255,255,.78);font-size:14px;
+      line-height:1.85;font-weight:300;margin-bottom:30px;
+    }
+    .feature-flow{
+      display:grid;grid-template-columns:repeat(5,1fr);gap:7px;
+    }
+    .flow-item{
+      background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);
+      border-radius:10px;padding:14px 8px;text-align:center;
+      color:white;font-size:10px;font-weight:600;line-height:1.4;
+    }
+    .flow-arrow{color:var(--gold);font-size:14px;align-self:center;text-align:center}
+    .feature-results{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .feature-stat{
+      background:rgba(255,255,255,.09);border-radius:15px;
+      padding:24px;border:1px solid rgba(255,255,255,.1);
+    }
+    .feature-stat .big{
+      color:var(--gold);font-size:33px;font-weight:700;line-height:1;
+      margin-bottom:7px;
+    }
+    .feature-stat .desc{
+      color:rgba(255,255,255,.75);font-size:11px;line-height:1.5;
+    }
+    .feature-details{
+      margin-top:25px;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;
+    }
+    .feature-details div{
+      font-size:11.5px;color:rgba(255,255,255,.78);
+      padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .feature-details strong{color:white}
+
+    /* INDUSTRIES */
+    .industries{background:var(--cream)}
+    .industry-grid{display:flex;flex-wrap:wrap;gap:10px}
+    .industry{
+      background:white;border-radius:100px;padding:10px 18px;
+      font-size:11px;font-weight:600;color:var(--purple);
+      border:1px solid rgba(90,45,130,.1);
+    }
+
+    /* CTA */
+    .contact{
+      background:white;text-align:center;
+    }
+    .contact .section-head{margin:0 auto 38px}
+    .contact .section-desc{max-width:650px;margin:0 auto}
+    .contact-actions{
+      display:flex;justify-content:center;gap:12px;flex-wrap:wrap;
+    }
+
+    footer{
+      background:var(--dark);color:rgba(255,255,255,.45);
+      text-align:center;padding:26px;font-size:11px;line-height:1.8;
+    }
+    footer a{color:var(--gold);text-decoration:none}
+
+    /* MOBILE */
+    @media(max-width:1050px){
+      .nav-links{display:none}
+      .expertise-grid{grid-template-columns:repeat(2,1fr)}
+      .cases-grid{grid-template-columns:1fr}
+      .position-grid,.feature-grid{grid-template-columns:1fr;gap:40px}
+      .feature-flow{grid-template-columns:repeat(5,1fr)}
+    }
+    @media(max-width:760px){
+      section{padding:72px 28px}
+      .navbar{padding:0 18px}
+      .nav-name,.home-link{display:none}
+      .hero{grid-template-columns:1fr}
+      .hero-copy{padding:65px 28px 45px}
+      .hero-photo{height:430px}
+      .strip{grid-template-columns:1fr 1fr}
+      .strip-item:nth-child(2){border-right:0}
+      .strip-item:nth-child(3),.strip-item:nth-child(4){border-top:1px solid rgba(255,255,255,.1)}
+      .expertise-grid{grid-template-columns:1fr}
+      .case-list{grid-template-columns:1fr}
+      .feature-flow{grid-template-columns:1fr}
+      .feature-results{grid-template-columns:1fr 1fr}
+      .feature-details{grid-template-columns:1fr}
+    }
+    @media(max-width:480px){
+      .strip{grid-template-columns:1fr}
+      .strip-item{border-right:0!important;border-top:1px solid rgba(255,255,255,.1)!important}
+      .strip-item:first-child{border-top:3px solid var(--gold)!important}
+      .feature-results{grid-template-columns:1fr}
+      .hero-actions .btn{width:100%}
+    }
+
+    /* FADE */
+    .reveal{
+      opacity:0;transform:translateY(20px);
+      transition:opacity .55s ease,transform .55s ease;
+    }
+    .reveal.visible{opacity:1;transform:none}
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a class="nav-brand" href="https://www.fernandabraga.com.br/" aria-label="Fernanda Braga - Home">
+    <div class="nav-logo"><span>fb</span></div>
+    <span class="nav-name">Fernanda Braga</span>
+  </a>
+
+  <div class="nav-links">
+    <a href="#about" data-i18n="nav.about">Sobre</a>
+    <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+    <a href="#cases" data-i18n="nav.cases">Cases</a>
+    <a href="#industries" data-i18n="nav.industries">Setores</a>
+    <a href="#contact" data-i18n="nav.contact">Contato</a>
+  </div>
+
+  <div class="nav-right">
+    <a class="home-link" href="https://www.fernandabraga.com.br/" data-i18n="nav.home">Site principal</a>
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Portfolio profissional</span>
+    <h1>Fernanda<br><span>Braga</span></h1>
+    <div class="hero-title" data-i18n="hero.title">
+      <strong>Business & Marketing Strategy Consultant</strong>
+    </div>
+    <p class="hero-desc" data-i18n="hero.desc">
+      26+ anos de experiência combinando estratégia de negócios, marketing, crescimento digital, liderança, gestão de projetos e desenvolvimento de novos negócios.
+    </p>
+    <div class="hero-pills">
+      <span class="pill" data-i18n="pill.1">Business Strategy</span>
+      <span class="pill" data-i18n="pill.2">Marketing & Growth</span>
+      <span class="pill" data-i18n="pill.3">Leadership</span>
+      <span class="pill" data-i18n="pill.4">Business Development</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#cases" class="btn btn-primary" data-i18n="hero.cta">Ver cases</a>
+      <a href="https://www.linkedin.com/in/feluzbraga/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <img src="https://www.fernandabraga.com.br/fernanda.png" alt="Fernanda Braga" loading="eager" />
+  </div>
+</header>
+
+<div class="strip">
+  <div class="strip-item reveal">
+    <div class="strip-number">26+</div>
+    <div class="strip-label" data-i18n="strip.1">anos de experiência</div>
+  </div>
+  <div class="strip-item reveal">
+    <div class="strip-number">10+</div>
+    <div class="strip-label" data-i18n="strip.2">anos em multinacionais</div>
+  </div>
+  <div class="strip-item reveal">
+    <div class="strip-number">50</div>
+    <div class="strip-label" data-i18n="strip.3">franquias vendidas em 1 ano</div>
+  </div>
+  <div class="strip-item reveal">
+    <div class="strip-number">R$5B+</div>
+    <div class="strip-label" data-i18n="strip.4">em patrimônio sob gestão no ecossistema financeiro</div>
+  </div>
+</div>
+
+<section class="positioning" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" data-i18n="about.label">Sobre o portfolio</div>
+      <h2 class="section-title" data-i18n="about.title">Experiência que vai <em>além do marketing.</em></h2>
+    </div>
+
+    <div class="position-grid">
+      <div class="position-text reveal">
+        <p data-i18n="about.p1">
+          Minha trajetória reúne experiência em consultoria, gestão de negócios, estratégia, marketing, comunicação, processos, educação e desenvolvimento de novos negócios.
+        </p>
+        <p data-i18n="about.p2">
+          Ao longo de 26+ anos, atuei em multinacionais, serviços financeiros, educação, varejo, saúde, franquias e serviços profissionais, em posições de liderança, consultoria e execução.
+        </p>
+        <p data-i18n="about.p3">
+          Este portfolio reúne alguns dos projetos que melhor representam essa combinação entre visão de negócio, pensamento estratégico e capacidade de colocar a estratégia em prática.
+        </p>
+      </div>
+
+      <div class="quote-box reveal">
+        <div class="small" data-i18n="quote.label">Como trabalho</div>
+        <h3 data-i18n="quote.title">Entender o negócio. Estruturar o caminho. Executar o que precisa acontecer.</h3>
+        <p data-i18n="quote.desc">
+          Meu trabalho pode envolver estratégia, marketing, processos, pessoas, fornecedores, tecnologia e operação. O ponto de partida é o problema do negócio, não uma ferramenta específica.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="expertise" id="expertise">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" data-i18n="expertise.label">Áreas de atuação</div>
+      <h2 class="section-title" data-i18n="expertise.title">Uma experiência <em>multidisciplinar.</em></h2>
+      <p class="section-desc" data-i18n="expertise.desc">
+        Competências desenvolvidas em diferentes contextos de negócio, do planejamento à execução.
+      </p>
+    </div>
+
+    <div class="expertise-grid">
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">◈</div>
+        <h3 data-i18n="ex.1.title">Business & Strategy</h3>
+        <ul>
+          <li data-i18n="ex.1.1">Business planning</li>
+          <li data-i18n="ex.1.2">Strategic planning</li>
+          <li data-i18n="ex.1.3">Market intelligence</li>
+          <li data-i18n="ex.1.4">Business development</li>
+          <li data-i18n="ex.1.5">Growth strategy</li>
+        </ul>
+      </div>
+
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">↗</div>
+        <h3 data-i18n="ex.2.title">Marketing & Growth</h3>
+        <ul>
+          <li data-i18n="ex.2.1">Marketing strategy</li>
+          <li data-i18n="ex.2.2">Lead generation</li>
+          <li data-i18n="ex.2.3">Paid media</li>
+          <li data-i18n="ex.2.4">Campaign management</li>
+          <li data-i18n="ex.2.5">Acquisition strategy</li>
+        </ul>
+      </div>
+
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">✦</div>
+        <h3 data-i18n="ex.3.title">Digital & Communication</h3>
+        <ul>
+          <li data-i18n="ex.3.1">Content strategy</li>
+          <li data-i18n="ex.3.2">Copywriting</li>
+          <li data-i18n="ex.3.3">Social media</li>
+          <li data-i18n="ex.3.4">Websites & landing pages</li>
+          <li data-i18n="ex.3.5">Digital presence</li>
+        </ul>
+      </div>
+
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">◎</div>
+        <h3 data-i18n="ex.4.title">Leadership & Operations</h3>
+        <ul>
+          <li data-i18n="ex.4.1">Team leadership</li>
+          <li data-i18n="ex.4.2">Project management</li>
+          <li data-i18n="ex.4.3">Process design</li>
+          <li data-i18n="ex.4.4">Supplier management</li>
+          <li data-i18n="ex.4.5">Implementation</li>
+        </ul>
+      </div>
+
+      <div class="expertise-card reveal">
+        <div class="expertise-icon">◇</div>
+        <h3 data-i18n="ex.5.title">Education & Training</h3>
+        <ul>
+          <li data-i18n="ex.5.1">Academic coordination</li>
+          <li data-i18n="ex.5.2">Teaching</li>
+          <li data-i18n="ex.5.3">Training materials</li>
+          <li data-i18n="ex.5.4">Professional development</li>
+          <li data-i18n="ex.5.5">Events & workshops</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cases" id="cases">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" data-i18n="cases.label">Selected work</div>
+      <h2 class="section-title" data-i18n="cases.title">Projetos que mostram <em>como eu atuo.</em></h2>
+      <p class="section-desc" data-i18n="cases.desc">
+        Alguns dos trabalhos que melhor representam minha atuação em estratégia, marketing, liderança, aquisição e desenvolvimento de negócios.
+      </p>
+    </div>
+
+    <div class="cases-grid">
+
+      <!-- IMPACTO -->
+      <article class="case-card reveal">
+        <div class="case-top">
+          <div class="case-sector" data-i18n="c1.sector">Serviços Profissionais</div>
+          <div class="case-title" data-i18n="c1.title">Construção de uma operação de marketing do zero</div>
+          <div class="case-role" data-i18n="c1.role">Business & Marketing Consultant · 2026 - presente</div>
+        </div>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="context">Contexto</h4>
+            <p data-i18n="c1.context">Empresa de terceirização de serviços para empresas, condomínios e residências, estruturada com foco em presença digital e geração de novos contratos.</p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="scope">Escopo</h4>
+            <ul class="case-list">
+              <li data-i18n="c1.a1">Naming e branding</li>
+              <li data-i18n="c1.a2">Identidade visual</li>
+              <li data-i18n="c1.a3">Redes sociais e configurações</li>
+              <li data-i18n="c1.a4">Integrações e plataformas de anúncios</li>
+              <li data-i18n="c1.a5">Website e landing pages</li>
+              <li data-i18n="c1.a6">Conteúdo, vídeo e copywriting</li>
+              <li data-i18n="c1.a7">Google Business Profile</li>
+              <li data-i18n="c1.a8">Google Ads e Meta Ads</li>
+            </ul>
+          </div>
+          <div class="result">
+            <div class="result-label" data-i18n="result">Resultado</div>
+            <p data-i18n="c1.result">Geração consistente de leads com baixo investimento e <strong>pelo menos 2 conversões de serviços por semana.</strong></p>
+          </div>
+          <div class="case-links">
+            <a class="case-link" href="https://www.impactooperacional.com.br/" target="_blank" rel="noopener" data-i18n="link.website">Website</a>
+            <a class="case-link" href="https://www.impactooperacional.com.br/limpeza" target="_blank" rel="noopener" data-i18n="link.cleaning">Landing page - Limpeza</a>
+            <a class="case-link" href="https://www.impactooperacional.com.br/monitoramento" target="_blank" rel="noopener" data-i18n="link.monitoring">Landing page - Monitoramento</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEMIS -->
+      <article class="case-card reveal">
+        <div class="case-top">
+          <div class="case-sector" data-i18n="c2.sector">Educação</div>
+          <div class="case-title" data-i18n="c2.title">Marketing, captação e gestão acadêmica</div>
+          <div class="case-role" data-i18n="c2.role">Marketing & Academic Coordinator · 2026 - presente</div>
+        </div>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="context">Contexto</h4>
+            <p data-i18n="c2.context">Atuação combinada em marketing e gestão acadêmica em uma instituição de ensino superior, conectando aquisição, comunicação, operação acadêmica e relacionamento com alunos e leads.</p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="scope">Escopo</h4>
+            <ul class="case-list">
+              <li data-i18n="c2.a1">Meta Ads e Google Ads</li>
+              <li data-i18n="c2.a2">Mídia offline e eventos</li>
+              <li data-i18n="c2.a3">Artes, vídeos e apresentações</li>
+              <li data-i18n="c2.a4">Gestão de fornecedores</li>
+              <li data-i18n="c2.a5">Relacionamento com escolas e leads</li>
+              <li data-i18n="c2.a6">Scripts comerciais</li>
+              <li data-i18n="c2.a7">Landing page de vestibular</li>
+              <li data-i18n="c2.a8">Coordenação de Administração e Contábeis</li>
+            </ul>
+          </div>
+          <div class="result">
+            <div class="result-label" data-i18n="result">Destaque</div>
+            <p data-i18n="c2.result">Integração entre marketing, captação, acompanhamento de leads e operação acadêmica, além de atuação como professora em gestão, estratégia, marketing, RH e raciocínio analítico.</p>
+          </div>
+          <div class="case-links">
+            <a class="case-link" href="https://fathemis.edu.br/vestibular2027/" target="_blank" rel="noopener" data-i18n="link.admissions">Landing page - Vestibular 2027</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- UNIRP -->
+      <article class="case-card reveal">
+        <div class="case-top">
+          <div class="case-sector" data-i18n="c3.sector">Educação</div>
+          <div class="case-title" data-i18n="c3.title">Liderança de marketing e estratégia digital</div>
+          <div class="case-role" data-i18n="c3.role">Head of Marketing, 2020-2021 · Marketing Consultant, 2021-2025</div>
+        </div>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="context">Contexto</h4>
+            <p data-i18n="c3.context">Atuação em duas fases: liderança de uma equipe de 22 pessoas durante um período crítico para o setor educacional e, posteriormente, consultoria de marketing até 2025.</p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="scope">Escopo</h4>
+            <ul class="case-list">
+              <li data-i18n="c3.a1">Liderança de equipe de 22 pessoas</li>
+              <li data-i18n="c3.a2">Marketing e comunicação na pandemia</li>
+              <li data-i18n="c3.a3">Planejamento de conteúdo</li>
+              <li data-i18n="c3.a4">Meta, Google e TikTok Ads</li>
+              <li data-i18n="c3.a5">Comunicação institucional</li>
+              <li data-i18n="c3.a6">Negociação com leads</li>
+              <li data-i18n="c3.a7">Apoio à formação de turmas</li>
+              <li data-i18n="c3.a8">Eventos para alunos do Ensino Médio</li>
+            </ul>
+          </div>
+          <div class="result">
+            <div class="result-label" data-i18n="result">Destaque</div>
+            <p data-i18n="c3.result">Adaptação da comunicação e marketing durante a pandemia, apoio à abertura das turmas e criação do primeiro grande evento pós-pandemia voltado à aproximação com estudantes do Ensino Médio.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- WIT -->
+      <article class="case-card reveal">
+        <div class="case-top">
+          <div class="case-sector" data-i18n="c4.sector">Financial Services</div>
+          <div class="case-title" data-i18n="c4.title">Marketing leadership em um grupo financeiro multinegócios</div>
+          <div class="case-role" data-i18n="c4.role">Marketing Leader · Nov 2021 - Dec 2024</div>
+        </div>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="context">Contexto</h4>
+            <p data-i18n="c4.context">Multi-family office com 8 negócios ligados a serviços financeiros, 10 unidades no Brasil e mais de R$5 bilhões em patrimônio sob gestão no ecossistema.</p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="scope">Escopo</h4>
+            <ul class="case-list">
+              <li data-i18n="c4.a1">Estratégia de marketing</li>
+              <li data-i18n="c4.a2">Gestão de equipe distribuída</li>
+              <li data-i18n="c4.a3">6 profissionais de marketing</li>
+              <li data-i18n="c4.a4">2 SDRs na matriz</li>
+              <li data-i18n="c4.a5">Lead generation e qualificação</li>
+              <li data-i18n="c4.a6">Eventos online e presenciais</li>
+              <li data-i18n="c4.a7">Conteúdo e presença digital</li>
+              <li data-i18n="c4.a8">Orçamento de marketing de aprox. R$2M/ano</li>
+            </ul>
+          </div>
+          <div class="result">
+            <div class="result-label" data-i18n="highlight">Destaque</div>
+            <p data-i18n="c4.result"><strong>Morning Call:</strong> criação e operação de um conteúdo diário em vídeo, publicado antes da abertura do mercado, que levou a presença digital da empresa a milhares de seguidores acompanhando o conteúdo diariamente.</p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="c4.leadTitle">Aquisição e vendas</h4>
+            <p data-i18n="c4.lead">Estruturação do fluxo inicial de atendimento de leads com os SDRs e geração de prospects de alta renda, incluindo clientes com capacidade de investimento acima de R$300 mil.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- RP -->
+      <article class="case-card reveal">
+        <div class="case-top">
+          <div class="case-sector" data-i18n="c5.sector">Healthcare</div>
+          <div class="case-title" data-i18n="c5.title">Branding, presença digital e aquisição de pacientes</div>
+          <div class="case-role" data-i18n="c5.role">Co-owner & Marketing Lead · desde Nov 2021</div>
+        </div>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="context">Contexto</h4>
+            <p data-i18n="c5.context">Clínica odontológica com foco também em tratamentos de maior ticket, especialmente implantes.</p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="scope">Escopo</h4>
+            <ul class="case-list">
+              <li data-i18n="c5.a1">Branding e identidade</li>
+              <li data-i18n="c5.a2">Estrutura digital</li>
+              <li data-i18n="c5.a3">Website</li>
+              <li data-i18n="c5.a4">Landing page de implantes</li>
+              <li data-i18n="c5.a5">Google Ads</li>
+              <li data-i18n="c5.a6">Meta Ads</li>
+              <li data-i18n="c5.a7">Conteúdo para redes sociais</li>
+              <li data-i18n="c5.a8">Materiais gráficos e comunicação offline</li>
+            </ul>
+          </div>
+          <div class="result">
+            <div class="result-label" data-i18n="result">Resultado</div>
+            <p data-i18n="c5.result">Foco em leads de maior valor, com <strong>pelo menos uma conversão mensal de implantes</strong> utilizando aproximadamente R$1.000/mês em mídia.</p>
+          </div>
+          <div class="case-links">
+            <a class="case-link" href="https://www.rpimplantes.com.br/" target="_blank" rel="noopener" data-i18n="link.website">Website</a>
+            <a class="case-link" href="https://www.rpimplantes.com.br/implantes" target="_blank" rel="noopener" data-i18n="link.implants">Landing page - Implantes</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EXTRA DIGITAL -->
+      <article class="case-card reveal">
+        <div class="case-top">
+          <div class="case-sector" data-i18n="c6.sector">Digital Marketing</div>
+          <div class="case-title" data-i18n="c6.title">Projetos digitais em diferentes setores</div>
+          <div class="case-role" data-i18n="c6.role">Consultoria independente · 2018 - presente</div>
+        </div>
+        <div class="case-body">
+          <div class="case-block">
+            <h4 data-i18n="context">Contexto</h4>
+            <p data-i18n="c6.context">Atuação em projetos de marketing digital para empresas de varejo, consumo, serviços, saúde, educação e outros segmentos.</p>
+          </div>
+          <div class="case-block">
+            <h4 data-i18n="scope">Experiência</h4>
+            <ul class="case-list">
+              <li data-i18n="c6.a1">Google Ads</li>
+              <li data-i18n="c6.a2">Meta Ads</li>
+              <li data-i18n="c6.a3">TikTok Ads</li>
+              <li data-i18n="c6.a4">Landing pages</li>
+              <li data-i18n="c6.a5">Websites</li>
+              <li data-i18n="c6.a6">Social media</li>
+              <li data-i18n="c6.a7">Copywriting</li>
+              <li data-i18n="c6.a8">Estratégia de aquisição</li>
+            </ul>
+          </div>
+          <div class="result">
+            <div class="result-label" data-i18n="differential">Diferencial</div>
+            <p data-i18n="c6.result">Experiência hands-on em diferentes pontos da operação digital, permitindo conectar estratégia, conteúdo, mídia, páginas e geração de leads.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="franchising">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" data-i18n="fr.label">Business Development</div>
+      <h2 class="section-title" data-i18n="fr.title">Construindo e expandindo um <em>negócio de franquias.</em></h2>
+    </div>
+
+    <div class="feature-grid">
+      <div class="reveal">
+        <p class="feature-intro" data-i18n="fr.intro">
+          De 2011 a 2016, atuei como diretora da Casa X Franchising, parte da holding SMZTO, participando da construção do negócio desde o início. Minha atuação envolveu estratégia, modelo de negócio, operação, expansão, pessoas, marketing, fornecedores, franqueados e orçamento.
+        </p>
+
+        <div class="feature-flow">
+          <div class="flow-item" data-i18n="flow.1">Business Model</div>
+          <div class="flow-item" data-i18n="flow.2">Brand</div>
+          <div class="flow-item" data-i18n="flow.3">Franchise Sales</div>
+          <div class="flow-item" data-i18n="flow.4">Operations</div>
+          <div class="flow-item" data-i18n="flow.5">Expansion</div>
+        </div>
+
+        <div class="feature-details">
+          <div><strong data-i18n="fd.1.label">Equipe:</strong> <span data-i18n="fd.1">10 liderados diretamente + agências e fornecedores</span></div>
+          <div><strong data-i18n="fd.2.label">Planejamento:</strong> <span data-i18n="fd.2">Business plan e projeções financeiras</span></div>
+          <div><strong data-i18n="fd.3.label">Operação:</strong> <span data-i18n="fd.3">Manuais e processos estruturados</span></div>
+          <div><strong data-i18n="fd.4.label">Orçamento:</strong> <span data-i18n="fd.4">Responsabilidade pelo orçamento da franqueadora</span></div>
+          <div><strong data-i18n="fd.5.label">Franqueados:</strong> <span data-i18n="fd.5">Seleção, treinamento e acompanhamento</span></div>
+          <div><strong data-i18n="fd.6.label">Comunicação:</strong> <span data-i18n="fd.6">Marketing, agências e assessoria de imprensa</span></div>
+        </div>
+      </div>
+
+      <div class="feature-results reveal">
+        <div class="feature-stat">
+          <div class="big">50</div>
+          <div class="desc" data-i18n="fs.1">franquias vendidas em 1 ano</div>
+        </div>
+        <div class="feature-stat">
+          <div class="big">10</div>
+          <div class="desc" data-i18n="fs.2">primeiras operações inauguradas e acompanhadas</div>
+        </div>
+        <div class="feature-stat">
+          <div class="big">R$1M+</div>
+          <div class="desc" data-i18n="fs.3">investimento mínimo aproximado por franquia na época</div>
+        </div>
+        <div class="feature-stat">
+          <div class="big">P&L</div>
+          <div class="desc" data-i18n="fs.4">responsabilidade por orçamento e acompanhamento financeiro da franqueadora</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="industries" id="industries">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" data-i18n="ind.label">Experiência setorial</div>
+      <h2 class="section-title" data-i18n="ind.title">Experiência em <em>diferentes negócios.</em></h2>
+      <p class="section-desc" data-i18n="ind.desc">
+        A diversidade de setores faz parte da minha experiência de consultoria e gestão.
+      </p>
+    </div>
+
+    <div class="industry-grid reveal">
+      <span class="industry" data-i18n="ind.1">Financial Services</span>
+      <span class="industry" data-i18n="ind.2">Education</span>
+      <span class="industry" data-i18n="ind.3">Healthcare</span>
+      <span class="industry" data-i18n="ind.4">Professional Services</span>
+      <span class="industry" data-i18n="ind.5">Franchising</span>
+      <span class="industry" data-i18n="ind.6">Retail</span>
+      <span class="industry" data-i18n="ind.7">Consumer Goods</span>
+      <span class="industry" data-i18n="ind.8">Real Estate</span>
+      <span class="industry" data-i18n="ind.9">Events</span>
+      <span class="industry" data-i18n="ind.10">Market Intelligence</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label" data-i18n="contact.label">Contato</div>
+      <h2 class="section-title" data-i18n="contact.title">Vamos <em>conversar?</em></h2>
+      <p class="section-desc" data-i18n="contact.desc">
+        Para oportunidades profissionais, projetos de consultoria, posições fractional ou parcerias.
+      </p>
+    </div>
+
+    <div class="contact-actions reveal">
+      <a class="btn btn-primary" href="mailto:feluzbraga@gmail.com" data-i18n="contact.email">Enviar e-mail</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/feluzbraga/" target="_blank" rel="noopener" data-i18n="contact.linkedin">LinkedIn</a>
+      <a class="btn btn-outline" href="https://wa.me/5511938024100" target="_blank" rel="noopener" data-i18n="contact.whatsapp">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong style="color:rgba(255,255,255,.7)">Fernanda Braga</strong> · <span data-i18n="footer">Business & Marketing Strategy Consultant</span></p>
+  <p style="margin-top:8px"><a href="https://www.fernandabraga.com.br/">fernandabraga.com.br</a></p>
+</footer>
+
+<script>
+const i18n = {
+  pt:{
+    "nav.about":"Sobre","nav.expertise":"Expertise","nav.cases":"Cases","nav.industries":"Setores","nav.contact":"Contato","nav.home":"Site principal",
+    "hero.eyebrow":"Portfolio profissional","hero.title":"<strong>Business & Marketing Strategy Consultant</strong>",
+    "hero.desc":"26+ anos de experiência combinando estratégia de negócios, marketing, crescimento digital, liderança, gestão de projetos e desenvolvimento de novos negócios.",
+    "pill.1":"Business Strategy","pill.2":"Marketing & Growth","pill.3":"Leadership","pill.4":"Business Development","hero.cta":"Ver cases",
+    "strip.1":"anos de experiência","strip.2":"anos em multinacionais","strip.3":"franquias vendidas em 1 ano","strip.4":"em patrimônio sob gestão no ecossistema financeiro",
+    "about.label":"Sobre o portfolio","about.title":"Experiência que vai além do marketing.",
+    "about.p1":"Minha trajetória reúne experiência em consultoria, gestão de negócios, estratégia, marketing, comunicação, processos, educação e desenvolvimento de novos negócios.",
+    "about.p2":"Ao longo de 26+ anos, atuei em multinacionais, serviços financeiros, educação, varejo, saúde, franquias e serviços profissionais, em posições de liderança, consultoria e execução.",
+    "about.p3":"Este portfolio reúne alguns dos projetos que melhor representam essa combinação entre visão de negócio, pensamento estratégico e capacidade de colocar a estratégia em prática.",
+    "quote.label":"Como trabalho","quote.title":"Entender o negócio. Estruturar o caminho. Executar o que precisa acontecer.",
+    "quote.desc":"Meu trabalho pode envolver estratégia, marketing, processos, pessoas, fornecedores, tecnologia e operação. O ponto de partida é o problema do negócio, não uma ferramenta específica.",
+    "expertise.label":"Áreas de atuação","expertise.title":"Uma experiência multidisciplinar.","expertise.desc":"Competências desenvolvidas em diferentes contextos de negócio, do planejamento à execução.",
+    "ex.1.title":"Business & Strategy","ex.1.1":"Business planning","ex.1.2":"Strategic planning","ex.1.3":"Market intelligence","ex.1.4":"Business development","ex.1.5":"Growth strategy",
+    "ex.2.title":"Marketing & Growth","ex.2.1":"Marketing strategy","ex.2.2":"Lead generation","ex.2.3":"Paid media","ex.2.4":"Campaign management","ex.2.5":"Acquisition strategy",
+    "ex.3.title":"Digital & Communication","ex.3.1":"Content strategy","ex.3.2":"Copywriting","ex.3.3":"Social media","ex.3.4":"Websites & landing pages","ex.3.5":"Digital presence",
+    "ex.4.title":"Leadership & Operations","ex.4.1":"Team leadership","ex.4.2":"Project management","ex.4.3":"Process design","ex.4.4":"Supplier management","ex.4.5":"Implementation",
+    "ex.5.title":"Education & Training","ex.5.1":"Academic coordination","ex.5.2":"Teaching","ex.5.3":"Training materials","ex.5.4":"Professional development","ex.5.5":"Events & workshops",
+    "cases.label":"Selected work","cases.title":"Projetos que mostram como eu atuo.","cases.desc":"Alguns dos trabalhos que melhor representam minha atuação em estratégia, marketing, liderança, aquisição e desenvolvimento de negócios.",
+    "context":"Contexto","scope":"Escopo","result":"Resultado","highlight":"Destaque","differential":"Diferencial",
+    "c1.sector":"Serviços Profissionais","c1.title":"Construção de uma operação de marketing do zero","c1.role":"Business & Marketing Consultant · 2026 - presente",
+    "c1.context":"Empresa de terceirização de serviços para empresas, condomínios e residências, estruturada com foco em presença digital e geração de novos contratos.",
+    "c1.a1":"Naming e branding","c1.a2":"Identidade visual","c1.a3":"Redes sociais e configurações","c1.a4":"Integrações e plataformas de anúncios","c1.a5":"Website e landing pages","c1.a6":"Conteúdo, vídeo e copywriting","c1.a7":"Google Business Profile","c1.a8":"Google Ads e Meta Ads",
+    "c1.result":"Geração consistente de leads com baixo investimento e <strong>pelo menos 2 conversões de serviços por semana.</strong>",
+    "link.website":"Website","link.cleaning":"Landing page - Limpeza","link.monitoring":"Landing page - Monitoramento",
+    "c2.sector":"Educação","c2.title":"Marketing, captação e gestão acadêmica","c2.role":"Marketing & Academic Coordinator · 2026 - presente",
+    "c2.context":"Atuação combinada em marketing e gestão acadêmica em uma instituição de ensino superior, conectando aquisição, comunicação, operação acadêmica e relacionamento com alunos e leads.",
+    "c2.a1":"Meta Ads e Google Ads","c2.a2":"Mídia offline e eventos","c2.a3":"Artes, vídeos e apresentações","c2.a4":"Gestão de fornecedores","c2.a5":"Relacionamento com escolas e leads","c2.a6":"Scripts comerciais","c2.a7":"Landing page de vestibular","c2.a8":"Coordenação de Administração e Contábeis",
+    "c2.result":"Integração entre marketing, captação, acompanhamento de leads e operação acadêmica, além de atuação como professora em gestão, estratégia, marketing, RH e raciocínio analítico.",
+    "link.admissions":"Landing page - Vestibular 2027",
+    "c3.sector":"Educação","c3.title":"Liderança de marketing e estratégia digital","c3.role":"Head of Marketing, 2020-2021 · Marketing Consultant, 2021-2025",
+    "c3.context":"Atuação em duas fases: liderança de uma equipe de 22 pessoas durante um período crítico para o setor educacional e, posteriormente, consultoria de marketing até 2025.",
+    "c3.a1":"Liderança de equipe de 22 pessoas","c3.a2":"Marketing e comunicação na pandemia","c3.a3":"Planejamento de conteúdo","c3.a4":"Meta, Google e TikTok Ads","c3.a5":"Comunicação institucional","c3.a6":"Negociação com leads","c3.a7":"Apoio à formação de turmas","c3.a8":"Eventos para alunos do Ensino Médio",
+    "c3.result":"Adaptação da comunicação e marketing durante a pandemia, apoio à abertura das turmas e criação do primeiro grande evento pós-pandemia voltado à aproximação com estudantes do Ensino Médio.",
+    "c4.sector":"Financial Services","c4.title":"Marketing leadership em um grupo financeiro multinegócios","c4.role":"Marketing Leader · Nov 2021 - Dec 2024",
+    "c4.context":"Multi-family office com 8 negócios ligados a serviços financeiros, 10 unidades no Brasil e mais de R$5 bilhões em patrimônio sob gestão no ecossistema.",
+    "c4.a1":"Estratégia de marketing","c4.a2":"Gestão de equipe distribuída","c4.a3":"6 profissionais de marketing","c4.a4":"2 SDRs na matriz","c4.a5":"Lead generation e qualificação","c4.a6":"Eventos online e presenciais","c4.a7":"Conteúdo e presença digital","c4.a8":"Orçamento de marketing de aprox. R$2M/ano",
+    "c4.result":"<strong>Morning Call:</strong> criação e operação de um conteúdo diário em vídeo, publicado antes da abertura do mercado, que levou a presença digital da empresa a milhares de seguidores acompanhando o conteúdo diariamente.",
+    "c4.leadTitle":"Aquisição e vendas","c4.lead":"Estruturação do fluxo inicial de atendimento de leads com os SDRs e geração de prospects de alta renda, incluindo clientes com capacidade de investimento acima de R$300 mil.",
+    "c5.sector":"Healthcare","c5.title":"Branding, presença digital e aquisição de pacientes","c5.role":"Co-owner & Marketing Lead · desde Nov 2021",
+    "c5.context":"Clínica odontológica com foco também em tratamentos de maior ticket, especialmente implantes.",
+    "c5.a1":"Branding e identidade","c5.a2":"Estrutura digital","c5.a3":"Website","c5.a4":"Landing page de implantes","c5.a5":"Google Ads","c5.a6":"Meta Ads","c5.a7":"Conteúdo para redes sociais","c5.a8":"Materiais gráficos e comunicação offline",
+    "c5.result":"Foco em leads de maior valor, com <strong>pelo menos uma conversão mensal de implantes</strong> utilizando aproximadamente R$1.000/mês em mídia.",
+    "link.implants":"Landing page - Implantes",
+    "c6.sector":"Digital Marketing","c6.title":"Projetos digitais em diferentes setores","c6.role":"Consultoria independente · 2018 - presente",
+    "c6.context":"Atuação em projetos de marketing digital para empresas de varejo, consumo, serviços, saúde, educação e outros segmentos.",
+    "c6.a1":"Google Ads","c6.a2":"Meta Ads","c6.a3":"TikTok Ads","c6.a4":"Landing pages","c6.a5":"Websites","c6.a6":"Social media","c6.a7":"Copywriting","c6.a8":"Estratégia de aquisição",
+    "c6.result":"Experiência hands-on em diferentes pontos da operação digital, permitindo conectar estratégia, conteúdo, mídia, páginas e geração de leads.",
+    "fr.label":"Business Development","fr.title":"Construindo e expandindo um negócio de franquias.",
+    "fr.intro":"De 2011 a 2016, atuei como diretora da Casa X Franchising, parte da holding SMZTO, participando da construção do negócio desde o início. Minha atuação envolveu estratégia, modelo de negócio, operação, expansão, pessoas, marketing, fornecedores, franqueados e orçamento.",
+    "flow.1":"Business Model","flow.2":"Brand","flow.3":"Franchise Sales","flow.4":"Operations","flow.5":"Expansion",
+    "fd.1.label":"Equipe:","fd.1":"10 liderados diretamente + agências e fornecedores","fd.2.label":"Planejamento:","fd.2":"Business plan e projeções financeiras","fd.3.label":"Operação:","fd.3":"Manuais e processos estruturados","fd.4.label":"Orçamento:","fd.4":"Responsabilidade pelo orçamento da franqueadora","fd.5.label":"Franqueados:","fd.5":"Seleção, treinamento e acompanhamento","fd.6.label":"Comunicação:","fd.6":"Marketing, agências e assessoria de imprensa",
+    "fs.1":"franquias vendidas em 1 ano","fs.2":"primeiras operações inauguradas e acompanhadas","fs.3":"investimento mínimo aproximado por franquia na época","fs.4":"responsabilidade por orçamento e acompanhamento financeiro da franqueadora",
+    "ind.label":"Experiência setorial","ind.title":"Experiência em diferentes negócios.","ind.desc":"A diversidade de setores faz parte da minha experiência de consultoria e gestão.",
+    "ind.1":"Financial Services","ind.2":"Education","ind.3":"Healthcare","ind.4":"Professional Services","ind.5":"Franchising","ind.6":"Retail","ind.7":"Consumer Goods","ind.8":"Real Estate","ind.9":"Events","ind.10":"Market Intelligence",
+    "contact.label":"Contato","contact.title":"Vamos conversar?","contact.desc":"Para oportunidades profissionais, projetos de consultoria, posições fractional ou parcerias.","contact.email":"Enviar e-mail","contact.linkedin":"LinkedIn","contact.whatsapp":"WhatsApp",
+    "footer":"Business & Marketing Strategy Consultant"
+  },
+
+  en:{
+    "nav.about":"About","nav.expertise":"Expertise","nav.cases":"Case Studies","nav.industries":"Industries","nav.contact":"Contact","nav.home":"Main site",
+    "hero.eyebrow":"Professional portfolio","hero.title":"<strong>Business & Marketing Strategy Consultant</strong>",
+    "hero.desc":"26+ years of experience combining business strategy, marketing, digital growth, leadership, project management and business development.",
+    "pill.1":"Business Strategy","pill.2":"Marketing & Growth","pill.3":"Leadership","pill.4":"Business Development","hero.cta":"View case studies",
+    "strip.1":"years of experience","strip.2":"years in multinational companies","strip.3":"franchises sold in one year","strip.4":"in assets under management across the financial ecosystem",
+    "about.label":"About this portfolio","about.title":"Experience that goes beyond marketing.",
+    "about.p1":"My career combines experience in consulting, business management, strategy, marketing, communications, processes, education and business development.",
+    "about.p2":"Over 26+ years, I have worked across multinational companies, financial services, education, retail, healthcare, franchising and professional services, in leadership, consulting and hands-on roles.",
+    "about.p3":"This portfolio brings together selected projects that best represent the combination of business understanding, strategic thinking and the ability to turn strategy into execution.",
+    "quote.label":"How I work","quote.title":"Understand the business. Structure the path. Execute what needs to happen.",
+    "quote.desc":"My work can involve strategy, marketing, processes, people, suppliers, technology and operations. The starting point is the business problem, not a specific tool.",
+    "expertise.label":"Areas of expertise","expertise.title":"A multidisciplinary background.","expertise.desc":"Capabilities developed across different business contexts, from planning to execution.",
+    "ex.1.title":"Business & Strategy","ex.1.1":"Business planning","ex.1.2":"Strategic planning","ex.1.3":"Market intelligence","ex.1.4":"Business development","ex.1.5":"Growth strategy",
+    "ex.2.title":"Marketing & Growth","ex.2.1":"Marketing strategy","ex.2.2":"Lead generation","ex.2.3":"Paid media","ex.2.4":"Campaign management","ex.2.5":"Acquisition strategy",
+    "ex.3.title":"Digital & Communication","ex.3.1":"Content strategy","ex.3.2":"Copywriting","ex.3.3":"Social media","ex.3.4":"Websites & landing pages","ex.3.5":"Digital presence",
+    "ex.4.title":"Leadership & Operations","ex.4.1":"Team leadership","ex.4.2":"Project management","ex.4.3":"Process design","ex.4.4":"Supplier management","ex.4.5":"Implementation",
+    "ex.5.title":"Education & Training","ex.5.1":"Academic coordination","ex.5.2":"Teaching","ex.5.3":"Training materials","ex.5.4":"Professional development","ex.5.5":"Events & workshops",
+    "cases.label":"Selected work","cases.title":"Projects that show how I work.","cases.desc":"Selected projects that represent my work across strategy, marketing, leadership, acquisition and business development.",
+    "context":"Context","scope":"Scope","result":"Result","highlight":"Highlight","differential":"Differential",
+    "c1.sector":"Professional Services","c1.title":"Building a marketing operation from the ground up","c1.role":"Business & Marketing Consultant · 2026 - Present",
+    "c1.context":"Outsourced services company serving businesses, condominiums and residential clients, with a focus on digital presence and new contract generation.",
+    "c1.a1":"Naming and branding","c1.a2":"Visual identity","c1.a3":"Social media setup","c1.a4":"Integrations and advertising platforms","c1.a5":"Website and landing pages","c1.a6":"Content, video and copywriting","c1.a7":"Google Business Profile","c1.a8":"Google Ads and Meta Ads",
+    "c1.result":"Consistent lead generation with low investment and <strong>at least 2 service conversions per week.</strong>",
+    "link.website":"Website","link.cleaning":"Landing page - Cleaning","link.monitoring":"Landing page - Monitoring",
+    "c2.sector":"Education","c2.title":"Marketing, student acquisition and academic management","c2.role":"Marketing & Academic Coordinator · 2026 - Present",
+    "c2.context":"Combined marketing and academic management role in a higher education institution, connecting acquisition, communications, academic operations and relationships with students and leads.",
+    "c2.a1":"Meta Ads and Google Ads","c2.a2":"Offline media and events","c2.a3":"Creative assets, videos and presentations","c2.a4":"Supplier management","c2.a5":"School and lead relationships","c2.a6":"Sales scripts","c2.a7":"Admissions landing page","c2.a8":"Business Administration and Accounting coordination",
+    "c2.result":"Integration of marketing, student acquisition, lead follow-up and academic operations, alongside teaching in management, strategy, marketing, HR and analytical reasoning.",
+    "link.admissions":"Admissions landing page - 2027",
+    "c3.sector":"Education","c3.title":"Marketing leadership and digital strategy","c3.role":"Head of Marketing, 2020-2021 · Marketing Consultant, 2021-2025",
+    "c3.context":"Two-stage engagement: leading a 22-person team during a critical period for higher education, followed by marketing consulting through 2025.",
+    "c3.a1":"22-person team leadership","c3.a2":"Pandemic marketing and communications","c3.a3":"Content planning","c3.a4":"Meta, Google and TikTok Ads","c3.a5":"Institutional communications","c3.a6":"Lead negotiation","c3.a7":"Enrollment and class formation support","c3.a8":"Events for high school students",
+    "c3.result":"Adapted marketing and communications during the pandemic, supported class formation and created the institution's first major post-pandemic event focused on high school students.",
+    "c4.sector":"Financial Services","c4.title":"Marketing leadership across a multi-business financial group","c4.role":"Marketing Leader · Nov 2021 - Dec 2024",
+    "c4.context":"Multi-family office with 8 businesses connected to financial services, 10 units across Brazil and more than R$5 billion in assets under management across the ecosystem.",
+    "c4.a1":"Marketing strategy","c4.a2":"Distributed team leadership","c4.a3":"6 marketing professionals","c4.a4":"2 SDRs at headquarters","c4.a5":"Lead generation and qualification","c4.a6":"Online and in-person events","c4.a7":"Content and digital presence","c4.a8":"Approx. R$2M annual marketing budget",
+    "c4.result":"<strong>Morning Call:</strong> created and operated a daily video format published before market opening, taking the company's digital presence to thousands of followers who followed the content daily.",
+    "c4.leadTitle":"Acquisition & sales","c4.lead":"Established the initial lead response flow with the SDR team and generated high-income prospects, including clients with investment capacity above R$300,000.",
+    "c5.sector":"Healthcare","c5.title":"Branding, digital presence and patient acquisition","c5.role":"Co-owner & Marketing Lead · since Nov 2021",
+    "c5.context":"Dental clinic with a focus on higher-ticket treatments, particularly dental implants.",
+    "c5.a1":"Branding and identity","c5.a2":"Digital structure","c5.a3":"Website","c5.a4":"Implant landing page","c5.a5":"Google Ads","c5.a6":"Meta Ads","c5.a7":"Social media content","c5.a8":"Graphic materials and offline communication",
+    "c5.result":"Focus on higher-value leads, with <strong>at least one implant conversion per month</strong> using approximately R$1,000/month in media.",
+    "link.implants":"Landing page - Implants",
+    "c6.sector":"Digital Marketing","c6.title":"Digital projects across multiple sectors","c6.role":"Independent consulting · 2018 - Present",
+    "c6.context":"Digital marketing projects for companies in retail, consumer goods, services, healthcare, education and other sectors.",
+    "c6.a1":"Google Ads","c6.a2":"Meta Ads","c6.a3":"TikTok Ads","c6.a4":"Landing pages","c6.a5":"Websites","c6.a6":"Social media","c6.a7":"Copywriting","c6.a8":"Acquisition strategy",
+    "c6.result":"Hands-on experience across different parts of the digital operation, connecting strategy, content, media, landing pages and lead generation.",
+    "fr.label":"Business Development","fr.title":"Building and scaling a franchise business.",
+    "fr.intro":"From 2011 to 2016, I served as Business Director at Casa X Franchising, part of the SMZTO holding group, helping build the business from the ground up. My scope covered strategy, business model, operations, expansion, people, marketing, suppliers, franchisees and budget.",
+    "flow.1":"Business Model","flow.2":"Brand","flow.3":"Franchise Sales","flow.4":"Operations","flow.5":"Expansion",
+    "fd.1.label":"Team:","fd.1":"10 direct reports + agencies and suppliers","fd.2.label":"Planning:","fd.2":"Business plan and financial projections","fd.3.label":"Operations:","fd.3":"Manuals and processes structured","fd.4.label":"Budget:","fd.4":"Responsibility for franchisor budget","fd.5.label":"Franchisees:","fd.5":"Selection, training and support","fd.6.label":"Communications:","fd.6":"Marketing, agencies and PR",
+    "fs.1":"franchises sold in one year","fs.2":"first operations opened and supported","fs.3":"approximate minimum investment per franchise at the time","fs.4":"responsibility for franchisor budget and financial tracking",
+    "ind.label":"Industry experience","ind.title":"Experience across different businesses.","ind.desc":"Working across sectors has been a consistent part of my consulting and management experience.",
+    "ind.1":"Financial Services","ind.2":"Education","ind.3":"Healthcare","ind.4":"Professional Services","ind.5":"Franchising","ind.6":"Retail","ind.7":"Consumer Goods","ind.8":"Real Estate","ind.9":"Events","ind.10":"Market Intelligence",
+    "contact.label":"Contact","contact.title":"Let's talk?","contact.desc":"For professional opportunities, consulting projects, fractional roles or partnerships.","contact.email":"Send email","contact.linkedin":"LinkedIn","contact.whatsapp":"WhatsApp",
+    "footer":"Business & Marketing Strategy Consultant"
+  },
+
+  es:{
+    "nav.about":"Sobre mí","nav.expertise":"Expertise","nav.cases":"Casos","nav.industries":"Sectores","nav.contact":"Contacto","nav.home":"Sitio principal",
+    "hero.eyebrow":"Portfolio profesional","hero.title":"<strong>Consultora de Estrategia, Negocios y Marketing</strong>",
+    "hero.desc":"Más de 26 años de experiencia combinando estrategia de negocios, marketing, crecimiento digital, liderazgo, gestión de proyectos y desarrollo de negocios.",
+    "pill.1":"Estrategia de Negocios","pill.2":"Marketing & Growth","pill.3":"Liderazgo","pill.4":"Desarrollo de Negocios","hero.cta":"Ver casos",
+    "strip.1":"años de experiencia","strip.2":"años en multinacionales","strip.3":"franquicias vendidas en 1 año","strip.4":"en patrimonio bajo gestión en el ecosistema financiero",
+    "about.label":"Sobre este portfolio","about.title":"Experiencia que va más allá del marketing.",
+    "about.p1":"Mi trayectoria combina experiencia en consultoría, gestión de negocios, estrategia, marketing, comunicación, procesos, educación y desarrollo de negocios.",
+    "about.p2":"A lo largo de más de 26 años, he trabajado en multinacionales, servicios financieros, educación, retail, salud, franquicias y servicios profesionales, en posiciones de liderazgo, consultoría y ejecución.",
+    "about.p3":"Este portfolio reúne algunos de los proyectos que mejor representan la combinación de visión de negocio, pensamiento estratégico y capacidad de convertir la estrategia en ejecución.",
+    "quote.label":"Cómo trabajo","quote.title":"Entender el negocio. Estructurar el camino. Ejecutar lo que necesita suceder.",
+    "quote.desc":"Mi trabajo puede involucrar estrategia, marketing, procesos, personas, proveedores, tecnología y operaciones. El punto de partida es el problema del negocio, no una herramienta específica.",
+    "expertise.label":"Áreas de actuación","expertise.title":"Una experiencia multidisciplinaria.","expertise.desc":"Competencias desarrolladas en diferentes contextos de negocio, desde la planificación hasta la ejecución.",
+    "ex.1.title":"Business & Strategy","ex.1.1":"Business planning","ex.1.2":"Strategic planning","ex.1.3":"Market intelligence","ex.1.4":"Business development","ex.1.5":"Growth strategy",
+    "ex.2.title":"Marketing & Growth","ex.2.1":"Marketing strategy","ex.2.2":"Lead generation","ex.2.3":"Paid media","ex.2.4":"Campaign management","ex.2.5":"Acquisition strategy",
+    "ex.3.title":"Digital & Communication","ex.3.1":"Content strategy","ex.3.2":"Copywriting","ex.3.3":"Social media","ex.3.4":"Websites & landing pages","ex.3.5":"Digital presence",
+    "ex.4.title":"Leadership & Operations","ex.4.1":"Team leadership","ex.4.2":"Project management","ex.4.3":"Process design","ex.4.4":"Supplier management","ex.4.5":"Implementation",
+    "ex.5.title":"Education & Training","ex.5.1":"Academic coordination","ex.5.2":"Teaching","ex.5.3":"Training materials","ex.5.4":"Professional development","ex.5.5":"Events & workshops",
+    "cases.label":"Selected work","cases.title":"Proyectos que muestran cómo trabajo.","cases.desc":"Algunos de los proyectos que mejor representan mi actuación en estrategia, marketing, liderazgo, adquisición y desarrollo de negocios.",
+    "context":"Contexto","scope":"Alcance","result":"Resultado","highlight":"Destacado","differential":"Diferencial",
+    "c1.sector":"Servicios Profesionales","c1.title":"Construcción de una operación de marketing desde cero","c1.role":"Business & Marketing Consultant · 2026 - presente",
+    "c1.context":"Empresa de tercerización de servicios para empresas, condominios y residencias, estructurada con foco en presencia digital y generación de nuevos contratos.",
+    "c1.a1":"Naming y branding","c1.a2":"Identidad visual","c1.a3":"Redes sociales y configuraciones","c1.a4":"Integraciones y plataformas de anuncios","c1.a5":"Sitio web y landing pages","c1.a6":"Contenido, video y copywriting","c1.a7":"Google Business Profile","c1.a8":"Google Ads y Meta Ads",
+    "c1.result":"Generación constante de leads con baja inversión y <strong>al menos 2 conversiones de servicios por semana.</strong>",
+    "link.website":"Sitio web","link.cleaning":"Landing page - Limpieza","link.monitoring":"Landing page - Monitoreo",
+    "c2.sector":"Educación","c2.title":"Marketing, captación y gestión académica","c2.role":"Marketing & Academic Coordinator · 2026 - presente",
+    "c2.context":"Actuación combinada en marketing y gestión académica en una institución de educación superior, conectando adquisición, comunicación, operación académica y relaciones con alumnos y leads.",
+    "c2.a1":"Meta Ads y Google Ads","c2.a2":"Medios offline y eventos","c2.a3":"Diseños, videos y presentaciones","c2.a4":"Gestión de proveedores","c2.a5":"Relación con escuelas y leads","c2.a6":"Scripts comerciales","c2.a7":"Landing page de admisión","c2.a8":"Coordinación de Administración y Contabilidad",
+    "c2.result":"Integración entre marketing, captación, seguimiento de leads y operación académica, además de docencia en gestión, estrategia, marketing, RR. HH. y razonamiento analítico.",
+    "link.admissions":"Landing page - Admisión 2027",
+    "c3.sector":"Educación","c3.title":"Liderazgo de marketing y estrategia digital","c3.role":"Head of Marketing, 2020-2021 · Marketing Consultant, 2021-2025",
+    "c3.context":"Dos etapas: liderazgo de un equipo de 22 personas durante un período crítico para el sector educativo y, posteriormente, consultoría de marketing hasta 2025.",
+    "c3.a1":"Liderazgo de equipo de 22 personas","c3.a2":"Marketing y comunicación durante la pandemia","c3.a3":"Planificación de contenidos","c3.a4":"Meta, Google y TikTok Ads","c3.a5":"Comunicación institucional","c3.a6":"Negociación con leads","c3.a7":"Apoyo a la formación de grupos","c3.a8":"Eventos para estudiantes de secundaria",
+    "c3.result":"Adaptación del marketing y la comunicación durante la pandemia, apoyo a la formación de grupos y creación del primer gran evento pospandemia para acercarse a estudiantes de secundaria.",
+    "c4.sector":"Servicios Financieros","c4.title":"Liderazgo de marketing en un grupo financiero multiservicio","c4.role":"Marketing Leader · Nov 2021 - Dic 2024",
+    "c4.context":"Multi-family office con 8 negocios vinculados a servicios financieros, 10 unidades en Brasil y más de R$5 mil millones bajo gestión en el ecosistema.",
+    "c4.a1":"Estrategia de marketing","c4.a2":"Gestión de equipo distribuido","c4.a3":"6 profesionales de marketing","c4.a4":"2 SDRs en la matriz","c4.a5":"Generación y calificación de leads","c4.a6":"Eventos online y presenciales","c4.a7":"Contenido y presencia digital","c4.a8":"Presupuesto de marketing de aprox. R$2M/año",
+    "c4.result":"<strong>Morning Call:</strong> creación y operación de un contenido diario en video, publicado antes de la apertura del mercado, que llevó la presencia digital de la empresa a miles de seguidores que acompañaban el contenido diariamente.",
+    "c4.leadTitle":"Adquisición y ventas","c4.lead":"Estructuración del flujo inicial de atención de leads con el equipo de SDRs y generación de prospectos de alta renta, incluyendo clientes con capacidad de inversión superior a R$300.000.",
+    "c5.sector":"Salud","c5.title":"Branding, presencia digital y captación de pacientes","c5.role":"Co-owner & Marketing Lead · desde Nov 2021",
+    "c5.context":"Clínica odontológica con foco también en tratamientos de mayor ticket, especialmente implantes.",
+    "c5.a1":"Branding e identidad","c5.a2":"Estructura digital","c5.a3":"Sitio web","c5.a4":"Landing page de implantes","c5.a5":"Google Ads","c5.a6":"Meta Ads","c5.a7":"Contenido para redes sociales","c5.a8":"Materiales gráficos y comunicación offline",
+    "c5.result":"Foco en leads de mayor valor, con <strong>al menos una conversión mensual de implantes</strong> utilizando aproximadamente R$1.000/mes en medios.",
+    "link.implants":"Landing page - Implantes",
+    "c6.sector":"Marketing Digital","c6.title":"Proyectos digitales en diferentes sectores","c6.role":"Consultoría independiente · 2018 - presente",
+    "c6.context":"Proyectos de marketing digital para empresas de retail, consumo, servicios, salud, educación y otros segmentos.",
+    "c6.a1":"Google Ads","c6.a2":"Meta Ads","c6.a3":"TikTok Ads","c6.a4":"Landing pages","c6.a5":"Sitios web","c6.a6":"Social media","c6.a7":"Copywriting","c6.a8":"Estrategia de adquisición",
+    "c6.result":"Experiencia práctica en diferentes puntos de la operación digital, conectando estrategia, contenido, medios, páginas y generación de leads.",
+    "fr.label":"Desarrollo de Negocios","fr.title":"Construyendo y expandiendo un negocio de franquicias.",
+    "fr.intro":"De 2011 a 2016, fui directora de Casa X Franchising, parte del holding SMZTO, participando en la construcción del negocio desde el inicio. Mi actuación incluyó estrategia, modelo de negocio, operación, expansión, personas, marketing, proveedores, franquiciados y presupuesto.",
+    "flow.1":"Business Model","flow.2":"Brand","flow.3":"Franchise Sales","flow.4":"Operations","flow.5":"Expansion",
+    "fd.1.label":"Equipo:","fd.1":"10 reportes directos + agencias y proveedores","fd.2.label":"Planificación:","fd.2":"Business plan y proyecciones financieras","fd.3.label":"Operación:","fd.3":"Manuales y procesos estructurados","fd.4.label":"Presupuesto:","fd.4":"Responsabilidad por el presupuesto de la franquiciadora","fd.5.label":"Franquiciados:","fd.5":"Selección, formación y seguimiento","fd.6.label":"Comunicación:","fd.6":"Marketing, agencias y prensa",
+    "fs.1":"franquicias vendidas en 1 año","fs.2":"primeras operaciones inauguradas y acompañadas","fs.3":"inversión mínima aproximada por franquicia en aquella época","fs.4":"responsabilidad por presupuesto y seguimiento financiero de la franquiciadora",
+    "ind.label":"Experiencia sectorial","ind.title":"Experiencia en diferentes negocios.","ind.desc":"La diversidad de sectores forma parte de mi experiencia de consultoría y gestión.",
+    "ind.1":"Financial Services","ind.2":"Education","ind.3":"Healthcare","ind.4":"Professional Services","ind.5":"Franchising","ind.6":"Retail","ind.7":"Consumer Goods","ind.8":"Real Estate","ind.9":"Events","ind.10":"Market Intelligence",
+    "contact.label":"Contacto","contact.title":"¿Hablamos?","contact.desc":"Para oportunidades profesionales, proyectos de consultoría, posiciones fractional o alianzas.","contact.email":"Enviar e-mail","contact.linkedin":"LinkedIn","contact.whatsapp":"WhatsApp",
+    "footer":"Consultora de Estrategia, Negocios y Marketing"
+  }
+};
+
+let currentLang='pt';
+
+function setLang(lang){
+  currentLang=lang;
+  document.querySelectorAll('.lang-btn').forEach(btn=>{
+    btn.classList.toggle('active',btn.textContent.toLowerCase()===lang);
+  });
+  document.documentElement.lang=lang==='pt'?'pt-BR':lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key=el.getAttribute('data-i18n');
+    if(i18n[lang][key]!==undefined) el.innerHTML=i18n[lang][key];
+  });
+  try{localStorage.setItem('portfolioLang',lang)}catch(e){}
+}
+
+try{
+  const saved=localStorage.getItem('portfolioLang');
+  if(saved && i18n[saved]) setLang(saved);
+}catch(e){}
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.08});
+
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
